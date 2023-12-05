@@ -52,4 +52,118 @@ content-type: application/json
 }
 
 ###
+POST http://localhost:1992/api/free-games
+Content-Type: application/json
 
+{
+    "data":
+    {
+        "nom":"battlefield",
+        "description":"rpg",
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.playstation.com%2Ffr-fr%2Fgames%2Fbattlefield-4%2F&psig=AOvVaw387tZOSfoM7Ndl34KWy6A5&ust=1701869040726000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKiKsK-y-IIDFQAAAAAdAAAAABAE"
+    }
+}
+
+###
+
+POST http://localhost:1992/api/free-games
+Content-Type: application/json
+
+{
+    "data":
+    {
+        "nom":"mario",
+        "description":"circuit",
+        "image":"https://www.premiere.fr/sites/default/files/styles/scale_crop_1280x720/public/2023-03/Super-Mario-Bros-Le-film-fait-chauffer-les-moteurs.jpg"
+    }
+}
+
+###
+GET http://localhost:1992/api/free-games
+Content-Type: application/json
+
+###
+GET http://localhost:1992/api/free-games/2
+Content-Type: application/json
+
+###
+PUT http://localhost:1992/api/free-games/3
+Content-Type: application/json
+
+{
+    "data":
+    {
+        "nom":"mario",
+        "description":"course",
+        "image":"https://www.premiere.fr/sites/default/files/styles/scale_crop_1280x720/public/2023-03/Super-Mario-Bros-Le-film-fait-chauffer-les-moteurs.jpg"
+    }
+}
+###
+
+DELETE  http://localhost:1992/api/free-games/3
+Content-Type: application/json
+
+{
+    "data":
+    {
+        "nom":"mario",
+        "description":"course",
+        "image":"https://www.premiere.fr/sites/default/files/styles/scale_crop_1280x720/public/2023-03/Super-Mario-Bros-Le-film-fait-chauffer-les-moteurs.jpg"
+    }
+}
+###
+
+POST http://localhost:1992/api/official-games
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzAxNzc0Mjk5LCJleHAiOjE3MDQzNjYyOTl9.WZ1C3YJH1X5VvEEFpmNBRiYKwuG08Z-PQ0GKqcaq_GQ
+
+{
+    "data":
+    {
+        "nom":"tekken",
+        "description":"fight",
+        "image":"https://media.ouest-france.fr/v1/pictures/MjAyMTA3OWE2ODY1NmE0YjFiYzhlYTZmMmZjYjI4NGM2MTY3ZGE?width=1260&height=708&focuspoint=50%2C25&cropresize=1&client_id=bpeditorial&sign=64a7f0206ea99d2371cb19f800fca7eb1bac43f8378dc841462e7d026025236d",
+        "prix":"30"
+    }
+}
+
+###
+GET http://localhost:1992/api/official-games
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzAxNzc0Mjk5LCJleHAiOjE3MDQzNjYyOTl9.WZ1C3YJH1X5VvEEFpmNBRiYKwuG08Z-PQ0GKqcaq_GQ
+
+###
+GET http://localhost:1992/api/official-games/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzAxNzc0Mjk5LCJleHAiOjE3MDQzNjYyOTl9.WZ1C3YJH1X5VvEEFpmNBRiYKwuG08Z-PQ0GKqcaq_GQ
+
+###
+PUT http://localhost:1992/api/official-games/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzAxNzc0Mjk5LCJleHAiOjE3MDQzNjYyOTl9.WZ1C3YJH1X5VvEEFpmNBRiYKwuG08Z-PQ0GKqcaq_GQ
+
+{
+    "data":
+    {
+        "nom":"tekken4",
+        "description":"fight",
+        "image":"https://media.ouest-france.fr/v1/pictures/MjAyMTA3OWE2ODY1NmE0YjFiYzhlYTZmMmZjYjI4NGM2MTY3ZGE?width=1260&height=708&focuspoint=50%2C25&cropresize=1&client_id=bpeditorial&sign=64a7f0206ea99d2371cb19f800fca7eb1bac43f8378dc841462e7d026025236d",
+        "prix":"30"
+    }
+}
+###
+
+DELETE  http://localhost:1992/api/official-games
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzAxNzc0Mjk5LCJleHAiOjE3MDQzNjYyOTl9.WZ1C3YJH1X5VvEEFpmNBRiYKwuG08Z-PQ0GKqcaq_GQ
+
+{
+    "data":
+    {
+        "nom":"tekken",
+        "description":"fight",
+        "image":"https://media.ouest-france.fr/v1/pictures/MjAyMTA3OWE2ODY1NmE0YjFiYzhlYTZmMmZjYjI4NGM2MTY3ZGE?width=1260&height=708&focuspoint=50%2C25&cropresize=1&client_id=bpeditorial&sign=64a7f0206ea99d2371cb19f800fca7eb1bac43f8378dc841462e7d026025236d",
+        "prix":"30"
+    }
+}
+###

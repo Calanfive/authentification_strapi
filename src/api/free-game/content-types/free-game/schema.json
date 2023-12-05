@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "free_games",
+  "info": {
+    "singularName": "free-game",
+    "pluralName": "free-games",
+    "displayName": "FreeGame",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    }
+  }
+}
