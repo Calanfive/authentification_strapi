@@ -1,0 +1,23 @@
+POST http://localhost:1992/api/auth/local/register
+content-type: application/json
+
+{
+    "username": "bobby",
+    "email": "test@test.com",
+    "password": "bobbypassword"
+}
+
+###
+POST http://localhost:1992/api/auth/local
+content-type: application/json
+
+{
+    "identifier": "test@test.com",
+    "password": "bobbypassword"
+}
+
+###
+GET http://localhost:1992/api/users/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzAxNzc0Mjk5LCJleHAiOjE3MDQzNjYyOTl9.WZ1C3YJH1X5VvEEFpmNBRiYKwuG08Z-PQ0GKqcaq_GQ
+
+###
