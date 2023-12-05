@@ -8,6 +8,26 @@ content-type: application/json
 }
 
 ###
+POST http://localhost:1992/api/auth/local/register
+content-type: application/json
+
+{
+    "username": "edouard",
+    "email": "test1@test.com",
+    "password": "edouardpassword"
+}
+
+###
+POST http://localhost:1992/api/auth/local/register
+content-type: application/json
+
+{
+    "username": "seb",
+    "email": "test2@test.com",
+    "password": "sebpassword"
+}
+
+###
 POST http://localhost:1992/api/auth/local
 content-type: application/json
 
@@ -21,3 +41,15 @@ GET http://localhost:1992/api/users/me
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzAxNzc0Mjk5LCJleHAiOjE3MDQzNjYyOTl9.WZ1C3YJH1X5VvEEFpmNBRiYKwuG08Z-PQ0GKqcaq_GQ
 
 ###
+POST http://localhost:1992/api/auth/change-password
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzAxNzc0Mjk5LCJleHAiOjE3MDQzNjYyOTl9.WZ1C3YJH1X5VvEEFpmNBRiYKwuG08Z-PQ0GKqcaq_GQ
+content-type: application/json
+
+{
+    "currentPassword": "bobbypassword",
+    "password": "bobbypassword2",
+    "passwordConfirmation": "bobbypassword2"
+}
+
+###
+
